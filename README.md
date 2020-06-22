@@ -15,4 +15,4 @@ Exam for SD711
 5. При автоматизации использовать плейбук Ansible.
 
 UPD Для работы кода сервера потребуется Websocket для Python.
-    Установить его можно командой "pip3 install websocket"
+    Установить его можно командой "pip3 install websockets"
