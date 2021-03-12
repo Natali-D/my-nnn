@@ -1,6 +1,8 @@
 FROM ubuntu:20.10
 MAINTAINER DN
-RUN apt update && apt install python3-pip -y && pip3 install websockets 
+RUN apt update && apt install python3-websocket 
+RUN apt install python3-pip -y && pip3 install websockets 
 EXPOSE 4000
 ADD server.py /etc/
 CMD /usr/bin/python3.6 /etc/server.py
+-

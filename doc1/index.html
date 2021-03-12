@@ -10,7 +10,7 @@
     <div class="message"></div>
   <textarea placeholder="Для отправки нажмите Enter"></textarea>
   <script>
-  var socket = new WebSocket("ws://192.168.50.100:4000");
+  var socket = new WebSocket("ws://192.168.50.209:4000");
   socket.onopen = function(){
 
     document.querySelector("textarea").addEventListener('keyup', function(e){
