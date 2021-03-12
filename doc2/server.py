@@ -1,3 +1,4 @@
+#! /usr/bin/python3.6
 import asyncio
 import websockets
 
@@ -20,7 +21,8 @@ async def socket(websocket, path):
     finally:
         await removeUser(websocket)
 
-start_server = websockets.serve(socket, 'SERVER_IP', SERVER_PORT)
+# start_server = websockets.serve(socket, 'SERVER_IP', SERVER_PORT)
+start_server = websockets.serve(socket, 'localhost', 4000)
 
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
